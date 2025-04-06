@@ -30,6 +30,8 @@ Make sure you have a running Kubernetes cluster, then:
 ```bash
 ./deploy-servas.sh
 ```
+You may need to supply your password once this script is complete in order to allow the port-forwarding command to execute.
+Once the script is done simply navigate to http://localhost in  your browser.
 
 ---
 
