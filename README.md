@@ -29,5 +29,3 @@ Make sure you have a running Kubernetes cluster, then:
 
 ```bash
 ./deploy-servas.sh
-
-
