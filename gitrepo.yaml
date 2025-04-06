@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: servas-repo
+  namespace: fleet-local
+spec:
+  repo: https://github.com/pakdarmo/servas-bundle.git
+  branch: main
+  paths:
+    - .
+
