@@ -29,3 +29,7 @@ Make sure you have a running Kubernetes cluster, then:
 
 ```bash
 ./deploy-servas.sh
+
+🛡️ This script installs Fleet, registers GitRepos, and starts port forwarding to expose the app on **http://localhost**.
+
+
