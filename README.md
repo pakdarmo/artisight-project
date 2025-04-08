@@ -39,8 +39,10 @@ Once the script is done simply navigate to http://localhost in  your browser.
 
 1. Install Fleet
 ```
-kubectl apply -f https://github.com/rancher/fleet/releases/latest/download/fleet-crd.yaml
-kubectl apply -f https://github.com/rancher/fleet/releases/latest/download/fleet-agent.yaml
+helm repo add fleet https://rancher.github.io/fleet-helm-charts/
+helm upgrade --install fleet-crd fleet/fleet-crd --namespace "cattle-fleet-system" --create-namespace
+helm upgrade --install fleet fleet/fleet --namespace "cattle-fleet-system" --create-namespace
+helm repo update
 ```
 
 2. Apply GitRepo for Servas
