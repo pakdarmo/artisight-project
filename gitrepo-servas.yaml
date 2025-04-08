@@ -7,5 +7,5 @@ spec:
   repo: https://github.com/pakdarmo/servas-bundle.git
   branch: main
   paths:
-    - .
+    - ./servas
 
